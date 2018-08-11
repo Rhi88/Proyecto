@@ -1,0 +1,37 @@
+
+<!-- this creates a google map on the page with the given lat/lng from -->
+<!-- the component as the initial center of the map: -->
+<div class ="grid-item info">
+  <main>
+    <img src="../../assets/img/electronico.jpg" alt="electronico">
+    <h2>Este requiere ser almacenado </h2>
+    <p>Parte de estos pequeños electrodomésticos contienen sustancias 
+      altamente tóxicas que pueden dañar al Medio Ambiente y a la salud, así que suponen 
+      un grave peligro cuando acaban en vertederos, mezclados con el resto de basura, 
+      en vez de reciclarse de forma controlada.</p>
+    </main>
+    </div>
+    <h1>{{ title }}</h1>
+
+<agm-map 
+  [latitude]="lat"
+  [longitude]="lng"
+  [zoom]="zoom"
+  [disableDefaultUI]="false"
+  [zoomControl]="false">
+  
+
+  <agm-marker 
+      *ngFor="let m of markers"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [iconUrl]="'http://icons.iconarchive.com/icons/double-j-design/electronics/32/PCB-icon.png'"
+      >
+    <agm-info-window>
+      <strong>InfoWindow content</strong>
+    </agm-info-window>
+    
+  </agm-marker>
+  
+
+</agm-map>

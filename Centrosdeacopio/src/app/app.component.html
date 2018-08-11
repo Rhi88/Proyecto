@@ -1,0 +1,41 @@
+<div class ="global">
+  <header>
+  
+  <h1>Centros de Acopio</h1>
+  
+  </header>
+  
+  <div class = "contenedor">
+    <div class = "grid-item navegador">
+      <nav>
+        <ul>
+          
+        <a href="#"><li>Inicio </li></a>
+        <a [routerLink]="['/aceitecom']"><li>Aceite comestible</li></a>
+        <a [routerLink]="['/aceiteauto']"><li>Aceite Automotor</li></a>
+        <a [routerLink]="['/pilas']"><li>Pilas</li></a>
+        <a [routerLink]="['/electronicos']"><li>Electronicos</li></a>
+        </ul>
+      </nav>
+    </div>
+    
+    <div class ="grid-item info">
+      <main>
+        <img src="../assets/img/recicla.png" alt="Pilas">
+        <h2>Por que el manejo adecuado </h2>
+        <p>Se reduce el volumen de los residuos sólidos a disponer. Se conserva el ambiente y se reduce
+           la contaminación. Se alarga la vida útil de los sistemas de relleno sanitario. ? Hay remuneración 
+           económica en la venta de reciclables y generación de empleo  Se protegen los recursos naturales renovables 
+           y no renovables.Se ahorra materia prima en la manufactura de productos nuevos con materiales reciclables. Para determinados materiales, 
+          se ahorra energía si se compara el proceso de fabricación de materiales en base a material virgen frente a material recuperado.</p>
+        </main>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+    <div class= "container footer">
+  <footer>
+  <p>Todos los derechos reservados Elaboro Israel Orozco Guerrero</p>
+  </footer>
+  </div>
+  </div>
+  
